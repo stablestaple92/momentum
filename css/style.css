@@ -50,7 +50,7 @@ body {
 #clock {
     padding: 5px 10px;
    
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
 }
 
@@ -61,25 +61,23 @@ body {
 
     border: none;
     background: transparent;
-
+    transition: all 0.5s ease-in-out;
+    
     text-align: center;
     color: white;
     font-weight: 400;
-
+    
     margin: 3rem 0;
-
+    
 }
 
-#login-form input:after, #todo-form input:after {
-    border-bottom: solid 2px #fafafa;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.3s;
-    opacity: 0;
-}
-
-#login-form input:focus:after, #todo-form input:focus:after {
+#login-form input:focus, #todo-form input:focus {
     opacity: 1;
+    box-shadow: 0px 2px #cecece;
+    transition: all 0.5s ease-in-out;
+    
 }
+
 
 #login-form input {
     height: 4rem;
@@ -104,7 +102,6 @@ body {
     font-size: 3rem;
     width: 100%;
 }
-
 
 #quote {
     display: flex;
@@ -134,7 +131,6 @@ body {
     border: none;
 }
 
-
 #nav-container {
     width:100%;
     min-height: 3em;
@@ -146,7 +142,7 @@ body {
 #weather {
     margin-left: auto;
     justify-content: center;
-    font-size: 0.8em;
+    font-size: 1.8rem;
     font-weight: 100;
 }
 
